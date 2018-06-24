@@ -150,3 +150,5 @@ local.properties
 !.vscode/launch.json
 !.vscode/extensions.json
 
+.idea/
+*.iml
