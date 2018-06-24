@@ -27,12 +27,15 @@ public class Example3 {
     }
 
     public void after() {
-        // TODO
-
+        Coder coder = this.findCoder("biezhi");
+        if(null != coder){
+            System.out.println("是否有女朋友: " + coder.hasGirlFriend());
+        }
     }
 
     public static void main(String[] args) {
         new Example3().before();
+        new Example3().after();
     }
 
 }

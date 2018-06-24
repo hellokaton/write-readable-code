@@ -14,8 +14,10 @@ public class Example2 {
     }
 
     public double after() {
-        // TODO
-        return 0D;
+        if (cap >= 0){
+            return weight * (1 << cap);
+        }
+        return weight / (1 << -cap);
     }
 
 }
