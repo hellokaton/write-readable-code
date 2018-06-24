@@ -3,6 +3,8 @@ package chapter_03;
 import java.util.function.Function;
 
 /**
+ * 避免tmp和retval这样泛泛的名字
+ *
  * @author biezhi
  * @date 2018/6/24
  */
@@ -25,4 +27,5 @@ public class Example2 {
         // TODO
     }
 
+    
 }

@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 循环迭代器
+ * <p>
+ * 用具体的名字代替抽象的名字
+ *
  * @author biezhi
  * @date 2018/6/24
  */
