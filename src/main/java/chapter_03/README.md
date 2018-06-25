@@ -1,4 +1,6 @@
-# 有表现力的词
+# 把信息装到名字里
+
+## 有表现力的词
 
 | 单词 | 更多选择 | 
 |-------|:--------:| 
@@ -7,7 +9,7 @@
 | start | launch、create、begin、open | 
 | make | create、set up、build、generate、compose、add、new |
 
-# 带单位的命名
+## 带单位的命名
 
 | 参数或变量 | 带单位的命名 | 
 |-------|:--------:| 
@@ -16,7 +18,7 @@
 | throttleDownload(float limit) | limit -> maxKB | 
 | rotate(float angle) | angle -> degreesCw | 
 
-# 给名字附加额外信息
+## 给名字附加额外信息
 
 | 场景 | 变量名 | 更好的名字 | 
 |-------|:--------:|:-------:| 
@@ -32,5 +34,5 @@
 - [Python 代码规范](https://github.com/google/styleguide/blob/gh-pages/pyguide.md)
 - [JavaScript 代码规范](https://google.github.io/styleguide/jsguide.html)
 
-# 总结
+## 总结
 
