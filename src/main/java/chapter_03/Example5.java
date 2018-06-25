@@ -8,9 +8,12 @@ package chapter_03;
  */
 public class Example5 {
 
+    /**
+     * VM options -DrunLocally=true
+     */
     public void start() {
-        String runLocally = System.getProperty("--runLocally", "false");
-
+        String runLocally = System.getProperty("runLocally", "false");
+        System.out.println("runLocally: " + runLocally);
     }
 
     public static void main(String[] args) {

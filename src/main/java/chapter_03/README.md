@@ -21,11 +21,9 @@
 | 场景 | 变量名 | 更好的名字 | 
 |-------|:--------:|:-------:| 
 | 一个纯文本的密码，需要加密后才可以使用 | password | plaintextPassword | 
-| 一条用户评论，需要转移后显示 | comment | unescapedComment | 
+| 一条用户评论，需要转义后显示 | comment | unescapedComment | 
 | 已转化为UTF-8的HTML文本 | html | htmlUtf8 |
 | 以"URL"方式编码的输入数据 | data | dataURLEncode |
-
-
 
 **[谷歌代码规范](https://github.com/google/styleguide) | [中文](http://zh-google-styleguide.readthedocs.io/en/latest/)** 
 

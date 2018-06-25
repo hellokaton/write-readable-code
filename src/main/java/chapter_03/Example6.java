@@ -27,10 +27,9 @@ public class Example6 {
 
     }
 
-    private final String cFoo = "foo";
+    private final long cMaxFileSize = 1024 * 10L;
 
     public void usePattern() {
         int offset_ = 10;
-        // do something
     }
 }

@@ -15,7 +15,7 @@ public class Example3 {
 
     static class Club {
 
-        public List<String> memebers() {
+        public List<String> members() {
             return new ArrayList<>();
         }
     }
@@ -25,9 +25,9 @@ public class Example3 {
         List<Club>   clubs = new ArrayList<>();
 
         for (int i = 0; i < clubs.size(); i++) {
-            for (int j = 0; j < clubs.get(0).memebers().size(); j++) {
+            for (int j = 0; j < clubs.get(0).members().size(); j++) {
                 for (int k = 0; k < users.size(); k++) {
-                    if (clubs.get(i).memebers().get(k) == users.get(j)) {
+                    if (clubs.get(i).members().get(k) == users.get(j)) {
                         System.out.println("用户 [" + j + "] 在俱乐部 [" + i + "]");
                     }
                 }
