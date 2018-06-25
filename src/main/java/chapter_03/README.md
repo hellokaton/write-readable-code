@@ -16,7 +16,7 @@
 | start(int delay) | delay -> delaySecs | 
 | createCache(int size) | size -> sizeMB | 
 | throttleDownload(float limit) | limit -> maxKB | 
-| rotate(float angle) | angle -> degreesCw | 
+| setHeight(float height) | height -> heightCM | 
 
 ## 给名字附加额外信息
 
