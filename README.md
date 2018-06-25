@@ -10,7 +10,7 @@
 
 - [01. 课程介绍](https://youtu.be/SNYwZ1l9blc)
 - [02. 写让人理解的代码](https://youtu.be/GYTgrSQO8fs)
-- [03. 把信息装到名字里](https://youtu.be/aRdLFdUGH4w)
+- [03. 把信息装到名字里](https://youtu.be/aEj9YF8uxts)
 - [04. 让人不会误解的名字](#) - 待更新
 - [05. 写代码也需要审美？](#) - 待更新
 - [06. 什么样的注释是好的？](#) - 待更新
