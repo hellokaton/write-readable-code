@@ -28,6 +28,7 @@ public class Example6 {
     }
 
     private final long cMaxFileSize = 1024 * 10L;
+    private final long MAX_FILE_SIZE = 1024 * 10L;
 
     public void usePattern() {
         int offset_ = 10;

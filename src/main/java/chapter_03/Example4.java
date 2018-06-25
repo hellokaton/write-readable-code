@@ -16,11 +16,12 @@ public class Example4 {
 
     // bad
     private String id = "af84ef845cd8";
+    private String hexId = "af84ef845cd8";
 
     public void calcTime() {
-        long start = System.currentTimeMillis();
+        long startMs = System.currentTimeMillis();
         // do something
-        long elapsed = System.currentTimeMillis() - start;
+        long elapsed = System.currentTimeMillis() - startMs;
         System.out.println("耗时: " + elapsed + "ms");
     }
 

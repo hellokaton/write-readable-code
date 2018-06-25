@@ -14,6 +14,8 @@ public class Example5 {
     public void start() {
         String runLocally = System.getProperty("runLocally", "false");
         System.out.println("runLocally: " + runLocally);
+
+        String extraLogging = System.getProperty("extraLogging", "false");
     }
 
     public static void main(String[] args) {

@@ -12,4 +12,16 @@ public class BinaryTree {
         return -1;
     }
 
+    public int height(){
+        return -1;
+    }
+
+    public int nodeNumbers(){
+        return -1;
+    }
+
+    public int memoryBytes(){
+        return -1;
+    }
+
 }
