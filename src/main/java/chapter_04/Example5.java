@@ -1,9 +1,5 @@
 package chapter_04;
 
-import chapter_02.Node;
-
-import java.util.stream.Stream;
-
 /**
  * list.size
  *
@@ -30,7 +26,7 @@ public class Example5 {
             return size;
         }
 
-        int countSize() {
+        int count() {
             return data.length - pos;
         }
 
@@ -44,7 +40,7 @@ public class Example5 {
     }
 
     private void shrinkList(List<String> list, int maxSize) {
-        while (list.countSize() > maxSize) {
+        while (list.size() > maxSize) {
             freeNode(list.popBack());
         }
     }
