@@ -11,16 +11,16 @@ import java.util.List;
  */
 public class Example3 {
 
-    private List<Integer> ageRange(int start, int stop) {
-        List<Integer> list = new ArrayList<>(stop - start);
-        for (int i = start; i < stop; i++) {
+    private List<Integer> ageRange(int minAge, int maxAge) {
+        List<Integer> list = new ArrayList<>(maxAge - minAge);
+        for (int i = minAge; i < maxAge; i++) {
             list.add(i);
         }
         return list;
     }
 
     public void invoke() {
-        List<Integer> range = ageRange(20, 30);
+        List<Integer> range = ageRange(20, 35);
         System.out.println(range);
     }
 

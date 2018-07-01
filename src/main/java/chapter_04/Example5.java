@@ -16,7 +16,7 @@ public class Example5 {
             this.data = data;
         }
 
-        int size() {
+        int countSize() {
             int size = 0;
             for (E e: data) {
                 if (null != e) {
@@ -26,7 +26,7 @@ public class Example5 {
             return size;
         }
 
-        int count() {
+        int size() {
             return data.length - pos;
         }
 
@@ -50,7 +50,7 @@ public class Example5 {
     }
 
     public static void main(String[] args) {
-        String[] items = new String[1_0000];
+        String[] items = new String[10_0000];
 
         for (int i = 0; i < items.length; i++) {
             items[i] = "hello_#" + i;

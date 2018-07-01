@@ -8,11 +8,11 @@ package chapter_04;
  */
 public class Example1 {
 
-    private void clip(String text, int length) {
+    private void truncate(String text, int maxChars) {
 
     }
 
     public void invoke() {
-        this.clip("hello world", 5);
+        this.truncate("hello world", 5);
     }
 }
