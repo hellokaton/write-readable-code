@@ -50,7 +50,7 @@ public class Example5 {
     }
 
     public static void main(String[] args) {
-        String[] items = new String[10_0000];
+        String[] items = new String[1_0000];
 
         for (int i = 0; i < items.length; i++) {
             items[i] = "hello_#" + i;
@@ -58,7 +58,9 @@ public class Example5 {
 
         List<String> list     = new List<>(items);
         Example5     example5 = new Example5();
+        long startMs = System.currentTimeMillis();
         example5.shrinkList(list, 10);
+        System.out.println((System.currentTimeMillis() - startMs) + "ms");
     }
 
 }
