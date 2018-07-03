@@ -29,7 +29,7 @@ public class Example1 {
         abstract double avgerage();
 
         private List<Double> pastItems;
-        private int count;    // how many so    far
+        private int count;    // how many so far
 
         private double minimum;
         private double maximum;
