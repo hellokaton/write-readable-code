@@ -5,8 +5,8 @@
 
 ## 课程地址
 
-- [Youtube](https://www.youtube.com/playlist?list=PLK2w-tGRdrj6908pHjT7Qs8zqzeCqdntl)
-- [Bilibili](https://www.bilibili.com/video/av25532096/)
+- [Youtube 频道](https://www.youtube.com/c/biezhi)
+- [Bilibili](https://space.bilibili.com/33165125)
 
 ## 章节
 
