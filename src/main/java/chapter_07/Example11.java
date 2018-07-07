@@ -1,4 +1,4 @@
-package chapter_06;
+package chapter_07;
 
 import java.util.List;
 
@@ -15,9 +15,9 @@ public class Example11 {
 	public void displayProducts(List<Product> products){
 		products.sort(this::compareProductByPrice);
 
-		// 以相反的顺序遍历列表
-		for (int i = products.size() - 1; i >= 0; i--) {
-			displayPrice(products.get(i).price);
+		// 从高到低的显示每个商品的价格
+		for (Product product: products) {
+			displayPrice(product.price);
 		}
 	}
 

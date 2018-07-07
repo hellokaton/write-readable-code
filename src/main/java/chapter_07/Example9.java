@@ -1,4 +1,4 @@
-package chapter_06;
+package chapter_07;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -12,8 +12,7 @@ import java.nio.file.Paths;
 public class Example9 {
 
 	/**
-	 * 返回此文件中的行数
-	 * count how many newline bytes ('\n') are in the file
+	 * 返回此文件中有多少换行("\n")
 	 */
 	int countLines(String fileName) {
 		try {
