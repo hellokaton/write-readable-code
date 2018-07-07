@@ -1,7 +1,5 @@
 package chapter_06;
 
-import java.util.List;
-
 /**
  * 不用为了注释而注释
  * 不要给不好的名字加注释——应该把名字改好
@@ -19,7 +17,7 @@ public class Example2 {
 	/**
 	 * 根据给定的名称和深度查找子树中的节点
 	 */
-	List<Node> findNodeInSubTree(Node subTree, String name, int depth) {
+	Node findNodeInSubTree(Node subTree, String name, int depth) {
 		return null;
 	}
 
