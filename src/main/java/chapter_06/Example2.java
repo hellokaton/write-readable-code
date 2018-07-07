@@ -15,7 +15,7 @@ public class Example2 {
 	}
 
 	/**
-	 * 根据给定的名称和深度查找子树中的节点
+	 * 根据给定的名称和深度查找节点
 	 */
 	Node findNodeInSubTree(Node subTree, String name, int depth) {
 		return null;
