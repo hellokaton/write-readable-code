@@ -22,6 +22,7 @@ public class Example7 {
     }
 
     public void foo() {
+        // 找到客户购买的所有商品
         for (Long customerId: customers) {
             for (Sale sale: allSales.get(customerId)) {
                 if (sale.recipient.equals(customerId)) {
@@ -43,5 +44,6 @@ public class Example7 {
 
         // 释放当前用户的锁
     }
+
 
 }
