@@ -15,12 +15,21 @@ public class Example4 {
         Node   next;
     }
 
+//    public boolean listHasNode(Node node, String name, int maxLength) {
+//        do {
+//            if (node.name.equals(name))
+//                return true;
+//            node = node.next;
+//        } while (node != null && --maxLength > 0);
+//        return false;
+//    }
+
     public boolean listHasNode(Node node, String name, int maxLength) {
-        do {
+        while (node != null && maxLength-- > 0){
             if (node.name.equals(name))
                 return true;
             node = node.next;
-        } while (node != null && --maxLength > 0);
+        }
         return false;
     }
 

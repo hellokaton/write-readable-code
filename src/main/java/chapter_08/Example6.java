@@ -19,14 +19,32 @@ public class Example6 {
         }
     }
 
-    public void foo() {
-        List<User> result = Arrays.asList(new User("jack"), new User("biezhi"));
+//    public void foo() {
+//        List<User> result = Arrays.asList(new User("jack"),
+//                new User("biezhi"));
+//
+//        int notNullCount = 0;
+//        for (User user: result) {
+//            if (user != null) {
+//                notNullCount++;
+//                if (user.name != null) {
+//                    System.out.println(user.name);
+//                }
+//            }
+//        }
+//
+//    }
+
+    public void bar() {
+        List<User> result = Arrays.asList(new User("jack"),
+                new User("biezhi"));
 
         int notNullCount = 0;
-        for (User user: result) {
-            if (user != null) {
-                notNullCount++;
+        for (User user : result) {
+            if (null == user) {
+                continue;
             }
+            notNullCount++;
             if (user.name != null) {
                 System.out.println(user.name);
             }

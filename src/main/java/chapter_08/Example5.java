@@ -21,20 +21,42 @@ public class Example5 {
 
     final int SUCCESS = 200;
 
-    public void part1() {
+//    public void part1() {
+//        int userResult       = 200;
+//        int permissionResult = 300;
+//
+//        String message = "";
+//        if (userResult == SUCCESS) {
+//            if (permissionResult != SUCCESS) {
+//                message = "没有权限阅读";
+//                return;
+//            }
+//            message = "";
+//        } else {
+//            message = String.valueOf(userResult);
+//        }
+//        // 模拟使用 message
+//        System.out.println(message);
+//    }
+
+    public void part2() {
         int userResult       = 200;
         int permissionResult = 300;
 
         String message = "";
-        if (userResult == SUCCESS) {
-            if (permissionResult != SUCCESS) {
-                message = "没有权限阅读";
-                return;
-            }
-            message = "";
-        } else {
+        if(userResult != SUCCESS){
             message = String.valueOf(userResult);
+            // 模拟使用 message
+            System.out.println(message);
+            return;
         }
+        if (permissionResult != SUCCESS) {
+            message = "没有权限阅读";
+            // 模拟使用 message
+            System.out.println(message);
+            return;
+        }
+        message = "";
         // 模拟使用 message
         System.out.println(message);
     }
