@@ -1,5 +1,7 @@
 package chapter_09;
 
+import org.apache.commons.beanutils.BeanUtils;
+
 /**
  * 简化表达式的创意方法
  *
@@ -25,7 +27,7 @@ public class Example6 {
         addTo.statusString = addFrom.statusString + addTo.statusString;
         addTo.numProcesses = addFrom.numProcesses + addTo.numProcesses;
         // ...
-
+        // BeanUtils.copyProperties();
     }
 
 }
