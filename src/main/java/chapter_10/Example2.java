@@ -14,7 +14,7 @@ public class Example2 {
     public void part1() {
         boolean done = false;
 
-        while (foo < bar && done) {
+        while (foo < bar && !done) {
             foo++;
             if (foo > bar) {
                 done = true;
