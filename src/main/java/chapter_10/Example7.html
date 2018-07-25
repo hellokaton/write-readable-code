@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+    <input type="text" id="input1" value="biezhi"/>
+    <input type="text" id="input2" value="abc"/>
+    <input type="text" id="input3" value=""/>
+    <input type="text" id="input4" value="80k"/>
+    <input type="text" id="input5" value="os7blue"/>
+</form>
+
+<script>
+    var setFirstEmptyInput = function (new_value) {
+        var found = false;
+        var i = 1;
+        var elem = document.getElementById('input' + i);
+        while (elem != null) {
+            if (elem.value === "") {
+                found = true;
+                break;
+            }
+            i++;
+            elem = document.getElementById('input' + i);
+        }
+        if (found) {
+            elem.value = new_value;
+        }
+        return elem;
+    };
+</script>
+</body>
+</html>
