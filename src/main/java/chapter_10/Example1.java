@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.function.BiConsumer;
 
 /**
+ * 减少变量
+ *
  * @author biezhi
  * @date 2018/7/21
  */
