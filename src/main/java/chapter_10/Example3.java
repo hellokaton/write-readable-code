@@ -10,11 +10,12 @@ public class Example3 {
 
     String username;
 
-    public void buildName() {
+    public void method1() {
         username = "abc";
+        System.out.println(method2());
     }
 
-    public boolean checkName() {
+    public boolean method2() {
         return null != username && username.length() > 6;
     }
 
