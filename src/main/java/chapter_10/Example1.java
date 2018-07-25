@@ -1,6 +1,7 @@
 package chapter_10;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiConsumer;
 
@@ -17,24 +18,20 @@ public class Example1 {
     }
 
     public void part1(Message rootMessage) {
-        LocalDateTime now = LocalDateTime.now();
-        rootMessage.lastViewTime = now;
+        rootMessage.lastViewTime = LocalDateTime.now();
     }
 
 
     public void part2() {
         BiConsumer<List<Integer>, Integer> consumer = (array, valueToRemove) -> {
-            Integer indexToRemove = null;
             for (int i = 0; i < array.size(); i++) {
                 if (array.get(i).equals(valueToRemove)) {
-                    indexToRemove = i;
+                    array.remove(i);
                     break;
                 }
             }
-            if (indexToRemove != null) {
-                array.remove(indexToRemove);
-            }
         };
+        consumer.accept(Arrays.asList(1, 2, 3), 2);
     }
 
 }

@@ -12,15 +12,18 @@ public class Example2 {
     int bar = 20;
 
     public void part1() {
-        boolean done = false;
-
-        while (foo < bar && !done) {
+        while (foo < bar) {
+            if(!isDone()){
+                break;
+            }
             foo++;
             if (foo > bar) {
-                done = true;
                 continue;
             }
         }
     }
 
+    private boolean isDone(){
+        return false;
+    }
 }

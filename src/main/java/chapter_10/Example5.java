@@ -32,15 +32,32 @@ public class Example5 {
         int spamVotes;
     }
 
-    public List<Reply> viewFilterdReplies(Long originalId) {
-        List<Reply> filteredReplies = new ArrayList<>();
-        Message     rootMessage     = messages.get(originalId);
-        List<Reply> allReplies      = replies.get(originalId);
+//    public List<Reply> viewFilterdReplies(Long originalId) {
+//        List<Reply> filteredReplies = new ArrayList<>();
+//        Message     rootMessage     = messages.get(originalId);
+//        List<Reply> allReplies      = replies.get(originalId);
+//
+//        rootMessage.viewCount += 1;
+//        rootMessage.lastViewTime = LocalDateTime.now();
+//        rootMessage.save();
+//
+//        for (Reply reply : allReplies) {
+//            if (reply.spamVotes > MAX_SPAM_VOTES) {
+//                filteredReplies.add(reply);
+//            }
+//        }
+//        return filteredReplies;
+//    }
 
+    public List<Reply> viewFilterdReplies(Long originalId) {
+
+        Message rootMessage = messages.get(originalId);
         rootMessage.viewCount += 1;
         rootMessage.lastViewTime = LocalDateTime.now();
         rootMessage.save();
 
+        List<Reply> filteredReplies = new ArrayList<>();
+        List<Reply> allReplies      = replies.get(originalId);
         for (Reply reply : allReplies) {
             if (reply.spamVotes > MAX_SPAM_VOTES) {
                 filteredReplies.add(reply);

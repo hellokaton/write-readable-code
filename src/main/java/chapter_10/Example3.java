@@ -8,14 +8,13 @@ package chapter_10;
  */
 public class Example3 {
 
-    String username;
-
     public void method1() {
-        username = "abc";
-        System.out.println(method2());
+        String username = "abc";
+//        String.format()
+        System.out.println(method2(username));
     }
 
-    public boolean method2() {
+    public boolean method2(String username) {
         return null != username && username.length() > 6;
     }
 
