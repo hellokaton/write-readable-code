@@ -20,7 +20,7 @@
 - [08. 简化流程让代码易读](https://youtu.be/v6A231LCdAQ)
 - [09. 拆分又臭又长的表达式](https://youtu.be/7_0ZhB0bJV0)
 - [10. 变量和可读性](https://youtu.be/K8oognOKIlA)
-- [11. 抽取无关的代码](https://youtu.be/ytZTFfJX7Lw)
+- [11. 抽取无关的代码](https://youtu.be/no8M8C1HNuI)
 - [12. 一次只干一件事](#) - 待更新
 - [13. 把想法变成代码](#) - 待更新
 - [14. 少写点代码](#) - 待更新
