@@ -29,6 +29,12 @@ public class Example4 {
         Business business = new Business();
         business.name = request.param("name");
 
+        business.url = "/biz/" + makePrettyURL(business);
+        business.created = LocalDate.now();
+        business.save();
+    }
+
+    private String makePrettyURL(Business business) {
         String urlPathName = business.name.toLowerCase();
         urlPathName = urlPathName.replaceAll("[\\.,\\']", "");
         urlPathName = urlPathName.replaceAll("[^a-z0-9]+", "-");
@@ -38,9 +44,7 @@ public class Example4 {
         if (urlPathName.charAt(urlPathName.length() - 1) == '-') {
             urlPathName = urlPathName.substring(0, urlPathName.length() - 1);
         }
-        business.url = "/biz/" + urlPathName;
-        business.created = LocalDate.now();
-        business.save();
+        return urlPathName;
     }
 
 }
