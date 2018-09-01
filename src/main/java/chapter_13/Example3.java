@@ -36,28 +36,12 @@ public class Example3 {
         CurrentIndex currentIndex = new CurrentIndex();
 
         for (Movie movie : titles) {
-            int titleId = titles.get(currentIndex.title).id;
-            int coverId = coverImages.get(currentIndex.cover).id;
-            int introId = intros.get(currentIndex.intro).id;
 
-            // 如果三行数据的 id 不同，则偏移当前索引
-            if (titleId != coverId || titleId != introId) {
-                if (titleId <= coverId && titleId <= introId) {
-                    currentIndex.title++;
-                } else if (coverId <= titleId && coverId <= introId) {
-                    currentIndex.cover++;
-                } else if (introId <= titleId && introId <= coverId) {
-                    currentIndex.intro++;
-                } else {
-                    // 不会进入这里
-                    break;
-                }
-                continue;
+            boolean matched = advanceToMatchIndex(currentIndex, titles, coverImages, intros);
+            if(!matched){
+                break;
             }
-
-            assert titleId == coverId && titleId == introId;
-
-            System.out.print("id: " + titleId);
+            System.out.print("id: " + titles.get(currentIndex.title).id);
             System.out.print(", title: " + titles.get(currentIndex.title).title);
             System.out.print(", cover: " + coverImages.get(currentIndex.cover).coverImage);
             System.out.print(", intro: " + intros.get(currentIndex.intro).intro);
@@ -70,4 +54,37 @@ public class Example3 {
 
     }
 
+    private boolean advanceToMatchIndex(CurrentIndex currentIndex,
+                                        List<Movie> titles,
+                                        List<Movie> coverImages,
+                                        List<Movie> intros){
+
+        for (Movie title : titles) {
+            int titleId = titles.get(currentIndex.title).id;
+            int coverId = coverImages.get(currentIndex.cover).id;
+            int introId = intros.get(currentIndex.intro).id;
+
+            if(titleId == coverId && titleId == introId){
+                return true;
+            }
+
+            int maxId = getMaxId(titleId, coverId, introId);
+            if(titleId < maxId){
+                currentIndex.title++;
+            }
+            if(coverId < maxId){
+                currentIndex.cover++;
+            }
+            if(introId < maxId){
+                currentIndex.intro++;
+            }
+        }
+
+        return false;
+    }
+
+    private Integer getMaxId(Integer...ids){
+        return ids[0] > ids[1] ?
+                Math.max(ids[0], ids[2]) : Math.max(ids[1], ids[2]);
+    }
 }

@@ -26,16 +26,29 @@ public class Example1 {
         String username;
     }
 
-    public String part1(Document document, Session session){
+//    public String part1(Document document, Session session){
+//        boolean isAdmin = isAdminRequest();
+//        if(null != document){
+//            if(!isAdmin && document.username != session.getAttribute("username")){
+//                return noAuthorized();
+//            }
+//        } else {
+//            if(!isAdmin) {
+//                return noAuthorized();
+//            }
+//        }
+//        // 渲染正常页面
+//        return "biezhi.html";
+//    }
+
+    public String part2(Document document, Session session){
         boolean isAdmin = isAdminRequest();
-        if(null != document){
-            if(!isAdmin && document.username != session.getAttribute("username")){
-                return noAuthorized();
-            }
+        if(isAdmin){
+            // 获取信息
+        } else if(document.username.equals(session.getAttribute("username"))){
+            // 获取信息
         } else {
-            if(!isAdmin) {
-                return noAuthorized();
-            }
+            return noAuthorized();
         }
         // 渲染正常页面
         return "biezhi.html";

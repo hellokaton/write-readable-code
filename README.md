@@ -22,7 +22,7 @@
 - [10. 变量和可读性](https://youtu.be/K8oognOKIlA)
 - [11. 抽取无关的代码](https://youtu.be/no8M8C1HNuI)
 - [12. 一次只干一件事](https://youtu.be/atrR3_h-AhA)
-- [13. 把想法变成代码](#) - 待更新
+- [13. 把想法变成代码](https://youtu.be/b_CiksFfIvI)
 - [14. 少写点代码](#) - 待更新
 - [15. 测试和可读性](#) - 待更新
 - [16. 你的最终考验](#) - 待更新
