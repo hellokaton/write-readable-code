@@ -1,8 +1,5 @@
 package chapter_14;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 缓存设计
  * <p>
@@ -20,15 +17,12 @@ import java.util.Map;
  */
 public class Example2 {
 
-    private static Map<String, DiskText> pool = new HashMap<>();
-
     private DiskText lastUsed;
 
     // 加载磁盘文件
     public DiskText loadDiskText(String key) {
         // 从本地加载
-        // pool.put(key, new DiskObject())
-        return pool.get(key);
+        return new DiskText(key, "");
     }
 
     // 根据 key 获取磁盘文件
